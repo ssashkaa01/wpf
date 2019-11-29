@@ -1,0 +1,15 @@
+C:\Users\ssashkoo01\source\repos\Keyboard\Keyboard\bin\Debug\Keyboard.exe.config
+C:\Users\ssashkoo01\source\repos\Keyboard\Keyboard\bin\Debug\Keyboard.exe
+C:\Users\ssashkoo01\source\repos\Keyboard\Keyboard\bin\Debug\Keyboard.pdb
+C:\Users\ssashkoo01\source\repos\Keyboard\Keyboard\obj\Debug\Keyboard.csprojAssemblyReference.cache
+C:\Users\ssashkoo01\source\repos\Keyboard\Keyboard\obj\Debug\MainWindow.g.cs
+C:\Users\ssashkoo01\source\repos\Keyboard\Keyboard\obj\Debug\App.g.cs
+C:\Users\ssashkoo01\source\repos\Keyboard\Keyboard\obj\Debug\Keyboard_MarkupCompile.cache
+C:\Users\ssashkoo01\source\repos\Keyboard\Keyboard\obj\Debug\Keyboard_MarkupCompile.lref
+C:\Users\ssashkoo01\source\repos\Keyboard\Keyboard\obj\Debug\MainWindow.baml
+C:\Users\ssashkoo01\source\repos\Keyboard\Keyboard\obj\Debug\Keyboard.g.resources
+C:\Users\ssashkoo01\source\repos\Keyboard\Keyboard\obj\Debug\Keyboard.Properties.Resources.resources
+C:\Users\ssashkoo01\source\repos\Keyboard\Keyboard\obj\Debug\Keyboard.csproj.GenerateResource.cache
+C:\Users\ssashkoo01\source\repos\Keyboard\Keyboard\obj\Debug\Keyboard.csproj.CoreCompileInputs.cache
+C:\Users\ssashkoo01\source\repos\Keyboard\Keyboard\obj\Debug\Keyboard.exe
+C:\Users\ssashkoo01\source\repos\Keyboard\Keyboard\obj\Debug\Keyboard.pdb

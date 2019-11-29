@@ -1,0 +1,72 @@
+﻿<Window x:Class="WpfApp4.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp4"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="600">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="4*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <TextBox HorizontalContentAlignment="Center" Text="0" VerticalContentAlignment="Center" Background="#FFFF4D4D" FontSize="22" Name="number" Foreground="White" PreviewTextInput="Number_PreviewTextInput" TextChanged="Number_TextChanged"/>
+        <Button Content="UP" Grid.Column="1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="22" Click="Up_Click" Background="#FF3D3D3D" Foreground="White"/>
+        <Button Content="DOWN" Grid.Column="2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="22" Click="Down_Click" Background="#FF3D3D3D" Foreground="White"/>
+        <Button Content="ADD" Grid.Column="3" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="22" Click="Add_Click" Background="#FF3D3D3D" Foreground="White"/>
+        <RadioButton GroupName="action" Content="+" Grid.Column="1" Grid.ColumnSpan="3" HorizontalAlignment="Center" Grid.Row="1" VerticalAlignment="Center" RenderTransformOrigin="0.5,0.5" IsChecked="True"  Checked="RadioButton_Checked">
+            <RadioButton.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="2" ScaleY="1.85"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </RadioButton.RenderTransform>
+        </RadioButton>
+        <RadioButton GroupName="action" Content="-" Grid.Column="1" Grid.ColumnSpan="3" HorizontalAlignment="Center" Grid.Row="2" VerticalAlignment="Center" RenderTransformOrigin="0.5,0.5" Checked="RadioButton_Checked">
+            <RadioButton.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="2" ScaleY="1.85"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </RadioButton.RenderTransform>
+        </RadioButton>
+        <RadioButton GroupName="action" Content="*" Grid.Column="1" Grid.ColumnSpan="3" HorizontalAlignment="Center" Grid.Row="3" VerticalAlignment="Center" RenderTransformOrigin="0.5,0.5" Checked="RadioButton_Checked">
+            <RadioButton.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="2" ScaleY="1.85"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </RadioButton.RenderTransform>
+        </RadioButton>
+        <RadioButton GroupName="action" Content="/" Grid.Column="1" Grid.ColumnSpan="3" HorizontalAlignment="Center" Grid.Row="4" VerticalAlignment="Center" RenderTransformOrigin="0.5,0.5" Checked="RadioButton_Checked">
+            <RadioButton.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="2" ScaleY="1.85"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </RadioButton.RenderTransform>
+        </RadioButton>
+        <Button Content="CALCULATE" Grid.Column="1" Grid.ColumnSpan="3" Grid.Row="5" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="22" Click="Calculate_Click" Background="#FF3D3D3D" Foreground="White"/>
+        <StackPanel Name="stack" HorizontalAlignment="Left" Grid.Row="1" Grid.RowSpan="5" VerticalAlignment="Bottom" />
+
+    </Grid>
+</Window>
