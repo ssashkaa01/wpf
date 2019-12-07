@@ -5,21 +5,25 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Keyboard"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800" KeyDown="Window_KeyDown">
+        Title="MainWindow" Height="450" Width="800" KeyDown="Window_KeyDown" KeyUp="Window_KeyUp">
     <DockPanel>
         <ToolBar DockPanel.Dock="Top" Grid.Row="0">
             <Button Name="btnStart" Click="btnStart_Click">Start</Button>
-            <Button Name="btnReset" Click="btnReset_Click">Reset</Button>
-            <TextBox Name="labelLevel">Level</TextBox>
-            <ComboBox />
-            <TextBox>Case sensitive</TextBox>
-            <CheckBox Name="caseSensative"/>
+            <Button Name="btnReset" Click="btnReset_Click" IsEnabled="False">Stop</Button>
+            
         </ToolBar>
         <TextBlock DockPanel.Dock="Top" Grid.Row="1"></TextBlock>
 
         <StatusBar DockPanel.Dock="Bottom" Height="30">
             <Label Name="statusBar"/>
         </StatusBar>
+        <StackPanel DockPanel.Dock="Top">
+            <TextBox Name="textBox1" IsReadOnly="True"></TextBox>
+        </StackPanel>
+        <StackPanel DockPanel.Dock="Top">
+            <TextBox Name="textBox2" IsReadOnly="True"></TextBox>
+            <ProgressBar Name="progressBar" Height="10"/>
+        </StackPanel>
         <DockPanel>
             <Grid Name="buttons">
                 <Grid.RowDefinitions>
@@ -185,10 +189,10 @@
                     <TextBlock Text="\" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                 </Border>
                 <Border BorderThickness="1" BorderBrush="Blue" Grid.ColumnSpan="5" Grid.Row="3" Grid.Column="0" Margin="2">
-                    <TextBlock Text="Shift" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <TextBlock Text="LeftShift" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                 </Border>
                 <Border BorderThickness="1" BorderBrush="Green" Grid.ColumnSpan="2" Grid.Row="3" Grid.Column="5" Margin="2">
-                    <TextBlock Text="Z" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <TextBlock  Text="Z" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                 </Border>
                 <Border BorderThickness="1" BorderBrush="DarkCyan" Grid.ColumnSpan="2" Grid.Row="3" Grid.Column="7" Margin="2">
                     <TextBlock Text="X" HorizontalAlignment="Center" VerticalAlignment="Center"/>
@@ -218,10 +222,10 @@
                     <TextBlock Text="/" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                 </Border>
                 <Border BorderThickness="1" BorderBrush="Blue" Grid.ColumnSpan="5" Grid.Row="3" Grid.Column="25" Margin="2">
-                    <TextBlock Text="Shift" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <TextBlock Text="RightShift" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                 </Border>
                 <Border BorderThickness="1" BorderBrush="Black" Grid.ColumnSpan="3" Grid.Row="4" Grid.Column="0" Margin="2">
-                    <TextBlock Text="Ctrl" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <TextBlock Text="LeftCtrl" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                 </Border>
                 <Border BorderThickness="1" BorderBrush="Black" Grid.ColumnSpan="3" Grid.Row="4" Grid.Column="3" Margin="2">
                     <TextBlock Text="Win" HorizontalAlignment="Center" VerticalAlignment="Center"/>
@@ -242,12 +246,14 @@
                     <TextBlock Text="Menu" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                 </Border>
                 <Border BorderThickness="1" BorderBrush="Black" Grid.ColumnSpan="3" Grid.Row="4" Grid.Column="27" Margin="2">
-                    <TextBlock Text="Ctrl" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <TextBlock Text="RightCtrl" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                 </Border>
                
             </Grid>
 
         </DockPanel>
+
+        
         
         
         
